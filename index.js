@@ -283,9 +283,13 @@ function parse_the_email(container)
 			//
 			container.date			= data.date;
 			container.from 			= data.from.value[0].address, // get first (only) from address
+                        console.log("from: ",container.from);
 			container.to 			= data.to.value.map(currentValue => currentValue.address), // get all to addresses 
+                        console.log("to: ",container.to);
 			container.cc			= data.cc.value.map(currentValue => currentValue.address), // get all cc addresses
+                        console.log("cc: ",container.cc);
 			container.bcc			= data.bcc.value.map(currentValue => currentValue.address), // get all bcc addresses
+                        console.log("bcc: ",container.bcc);
 			container.subject		= data.subject || "No Subject",
 			container.message_id	= data.messageId
 
