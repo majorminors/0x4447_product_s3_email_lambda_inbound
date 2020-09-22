@@ -452,11 +452,11 @@ function create_s3_boject_key(container)
 					   + "/"
 					   + container.to_account
 					   + "/"
-					   + container.from_domain
-					   + "/"
-					   + container.from_account
-					   + "/"
 					   + container.date
+					   + " - "
+					   + container.from_account
+					   + "-at-"
+					   + container.from_domain
 					   + " - "
 					   + container.subject
 					   + "/"
